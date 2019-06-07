@@ -17,7 +17,10 @@
         <module>guns-api</module>
         <module>guns-user</module>
         <module>guns-film</module>
-    </modules>
+        <module>guns-cinema</module>
+        <module>guns-order</module>
+        <module>guns-alipay</module>
+       </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

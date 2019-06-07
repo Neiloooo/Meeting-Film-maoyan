@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     //注入UserApi的接口,远程调用user模块里的实现类
-    @Reference(interfaceClass = UserAPI.class,check = false)
+    @Reference(interfaceClass = UserAPI.class)
     private UserAPI userAPI;
 
     /**

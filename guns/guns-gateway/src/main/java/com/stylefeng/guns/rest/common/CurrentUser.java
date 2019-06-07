@@ -7,7 +7,7 @@ package com.stylefeng.guns.rest.common;
 public class CurrentUser {
 
     //创建一个UserInfoModel类型的线程存储空间
-    private static final ThreadLocal<String> threadLocal = new ThreadLocal<>();
+    private static final InheritableThreadLocal<String> threadLocal = new InheritableThreadLocal<>();
 //第二种方式,我们只将我们所需的userId存入就好,这个体量就小了很多,使用方法和存入对象大同小异
     //1.向当前线程存入userID
     public static void saveUserId(String userId){

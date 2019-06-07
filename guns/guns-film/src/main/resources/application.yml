@@ -10,7 +10,7 @@ jwt:
   md5-key: randomKey      #md5加密混淆key
 
 server:
-  port: 8083 #user项目端口,不能与gate-way的端口冲突
+  port: 8084 #user项目端口,不能与gate-way的端口冲突
 
 mybatis-plus:
   mapper-locations: classpath*:com/stylefeng/guns/rest/**/mapping/*.xml
@@ -34,7 +34,7 @@ spring:
     registry: zookeeper://localhost:2181
     protocol:
       name: dubbo #定义传输协议为dubbo
-      prot: 20881 #传输协议的端口为20881,防止端口占用,不同微服务使用不同端口
+      port: 20882 #传输协议的端口为20881,防止端口占用,不同微服务使用不同端口
   datasource:
       url: jdbc:mysql://localhost:3306/guns_rest?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
       username: root

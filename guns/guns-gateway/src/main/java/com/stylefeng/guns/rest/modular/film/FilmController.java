@@ -23,11 +23,11 @@ public class FilmController {
     private static final String IMG_PRE = "WWW.121212.cn/";
 
     //引入服务层暴漏的接口
-    @Reference(interfaceClass = FilmServiceApi.class)
+    @Reference(interfaceClass = FilmServiceApi.class,check = false)
     private FilmServiceApi filmServiceApi;
 
 
-    @Reference(interfaceClass = FilmAsyncServiceApi.class,async = true)
+    @Reference(interfaceClass = FilmAsyncServiceApi.class,async = true,check = false)
     private FilmAsyncServiceApi filmAsyncServiceApi;
 
     /**
